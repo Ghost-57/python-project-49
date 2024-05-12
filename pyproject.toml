@@ -1,0 +1,12 @@
+[tool.poetry]
+packages = [
+  { include = "brain_games" },
+]
+
+[tool.poetry.dependencies]
+brain-games = "brain_games.scripts.brain_games:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
