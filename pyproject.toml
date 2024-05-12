@@ -4,9 +4,12 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-brain-games = "brain_games.scripts.brain_games:main"
+python = "^3.11"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
