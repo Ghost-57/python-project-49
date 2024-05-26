@@ -1,26 +1,29 @@
 import random
-import math
 
 
-def generate_question():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
-    question = f"{num1} {num2}"
-    answer = math.gcd(num1, num2)
-    return question, answer
+def generate_progression():
+    start = random.randint(1, 10)
+    step = random.randint(1, 10)
+    length = random.randint(5, 10)
+    progression = [start + i * step for i in range(length)]
+    hidden_index = random.randint(0, length - 1)
+    correct_answer = progression[hidden_index]
+    progression[hidden_index] = ".."
+    question = " ".join(map(str, progression))
+    return question, correct_answer
 
 
-def brain_gcd():
+def brain_progression():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
-    print("Find the greatest common divisor of given numbers.")
+    print("What number is missing in the progression?")
 
     correct_answers_count = 0
     questions_needed = 3
 
     while correct_answers_count < questions_needed:
-        question, correct_answer = generate_question()
+        question, correct_answer = generate_progression()
         print(f"Question: {question}")
 
         try:
@@ -28,7 +31,6 @@ def brain_gcd():
         except ValueError:
             print("Invalid input. Please enter an integer.")
             continue
-
         if user_answer == correct_answer:
             print("Correct!")
             correct_answers_count += 1
@@ -41,4 +43,4 @@ def brain_gcd():
 
 
 if __name__ == "__main__":
-    brain_gcd()
+    brain_progression()
