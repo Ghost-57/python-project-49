@@ -6,7 +6,7 @@ def is_even(num):
     return num % 2 == 0
 
 
-def brain_games():
+def brain_even():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
