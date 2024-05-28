@@ -20,9 +20,9 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry.scripts]
-brain_games = "brain_games.scripts.brain_games:main"
-brain_even = "brain_games.scripts.brain_even:main"
-brain_calc = "brain_games.scripts.brain_calc:main"
-brain_gcd = "brain_games.scripts.brain-gcd:main"
-brain_progression = "brain_games.scripts.brain_progression:main"
-brain_prime = "brain_games.scripts.brain-prime:main"
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain-gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain-prime:main"
