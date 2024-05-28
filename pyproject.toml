@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "brain_games"
 version = "0.1.0"
 description = "My first project"
 authors = ["Misha"]
 packages = [
-  { include = "brain-games" },
+  { include = "brain_games" },
 ]
 
 [tool.poetry.dependencies]
@@ -20,9 +20,9 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
-brain-calc = "brain-games.scripts.brain_calc:main"
-brain-gcd = "brain-games.scripts.brain-gcd:main"
+brain_games = "brain_games.scripts.brain_games:main"
+brain_even = "brain_games.scripts.brain_even:main"
+brain_calc = "brain-games.scripts.brain_calc:main"
+brain_gcd = "brain-games.scripts.brain-gcd:main"
 brain_progression = "brain-games.scripts.brain_progression:main"
-brain-prime = "brain-games.scripts.brain-prime:mail"
+brain_prime = "brain-games.scripts.brain-prime:mail"
