@@ -33,7 +33,7 @@ def brain_calc():
         try:
             user_answer = int(input("Your answer: "))
         except ValueError:
-            print(f"Invalid input. Please enter an integer.")
+            print("Invalid input. Please enter an integer.")
             continue
 
         if user_answer == correct_answer:
