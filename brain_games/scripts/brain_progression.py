@@ -14,7 +14,7 @@ def generate_progression():
     return question, correct_answer
 
 
-def brain_progression():
+def main():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -44,4 +44,4 @@ def brain_progression():
 
 
 if __name__ == "__main__":
-    main()
+    brain_progression()

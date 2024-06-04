@@ -17,7 +17,7 @@ def generate_question():
     return question, answer
 
 
-def brain_calc():
+def main():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -48,4 +48,4 @@ def brain_calc():
 
 
 if __name__ == "__main__":
-    main()
+    brain_calc()

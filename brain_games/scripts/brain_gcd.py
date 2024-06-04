@@ -11,7 +11,7 @@ def generate_question():
     return question, answer
 
 
-def brain_gcd():
+def main():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -42,4 +42,4 @@ def brain_gcd():
 
 
 if __name__ == "__main__":
-    main()
+    brain_gcd()

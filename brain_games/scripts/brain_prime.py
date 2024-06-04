@@ -19,7 +19,7 @@ def generate_question():
     return question, correct_answer
 
 
-def brain_prime():
+def main():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -46,4 +46,4 @@ def brain_prime():
 
 
 if __name__ == "__main__":
-    main()
+    brain_prime()
