@@ -7,5 +7,5 @@ def main():
     run_game(calc.py)
 
 
-if name == '__main__':
+if __name__ == '__main__':
     main()
