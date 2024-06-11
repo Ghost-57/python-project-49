@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from engine.py import run_game
-from games_all.py import calc
+from brain_games.engine import run_games
+from brain_games.games.calc import generate_question
 
 
 def main():
-    run_game(calc)
+    run_game(calc.py)
 
 
 if name == '__main__':

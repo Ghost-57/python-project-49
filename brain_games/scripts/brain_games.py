@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from games_all.py import welcome_user
+from brain_games.games.games_all import welcome_user
 
 
 def main():

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from engine.py import run_game
-from games_all.py import prime
+from brain_games.engine import run_games
+from brain_games.games.prime import is_prime
 
 
 def main():
