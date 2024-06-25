@@ -4,7 +4,7 @@ import operator
 DESCRIPTION = "What is the result of the expression?"
 
 
-def generate_question():
+def generate_question() -> object:
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     operations = {
